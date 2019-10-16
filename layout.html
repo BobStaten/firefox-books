@@ -1,9 +1,17 @@
-{% extends 'layout.html' %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books</title>
+    <form action="{{ url_for('logout') }}" method="POST">
+      <button class="logoutPos" type = "submit">LOGOUT</button>
+    </form>
+  </head>
 
-{% block heading %}
-  LOGIN
-{% endblock %}
+  <body>
+    <h1>{% block heading %}{% endblock %}</h1>
 
-{% block body %}
-  Search for a book
-{% endblock %}
+    {% block body %}
+    {% endblock %}
+  </body>
+</html>
+
