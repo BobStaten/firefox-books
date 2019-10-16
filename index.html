@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <div class = 'welcome'>
+    <h1>WELCOME to BOOKS! 38</h1>
+  </div>
+</head>
+
+  <form action="{{ url_for('login') }}" method="POST">
+    <button class="loginPos" type = "submit">LOGIN</button>
+  </form>
+
+  <h3>Please log in with your password</h3>
+  <body>
+
+  <style>
+
+    body{
+      background-color: turquoise;;
+      text-align center;
+      color: white;
+    }
+    form {
+      text-align: center;
+    }
+    h3{
+      text-align: center;
+      color; yellow;
+    }
+
+    .logoutPos{
+      position:fixed;
+      right: 20px;
+      top: 0 px;
+    }
+    .welcome{
+      text-align: center;
+      background-color: turquoise;
+      color: red;
+    }
+  </style>
+
+    <form action="{{ url_for('login') }}" method="POST">
+      <input type= "text" name="username" placeholder= "Username">
+      <input type="password" name="password" placeholder= "Password">
+      <button type = "submit">LOGIN</button>
+    </form>
+
+  </body>
+    <h3>Or register for an account.</h3>
+
+    <form action="{{ url_for('register') }}" method="POST">
+      <input type="text" name="name" placeholder="Enter your name.">
+      <input type="password" name="password" placeholder="Enter a password.">
+      <input type="password" name="confirmpassword" placeholder="Confirm Password">
+      <button type="submit">REGISTER</button>
+    </form>
+  </body>
+</html>
