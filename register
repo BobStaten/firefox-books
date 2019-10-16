@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block heading %}
+  Register
+{% endblock %}
+
+{% block body %}
+  Welcome.
+  Please return to Homepage to login.
+  <form action="{{ url_for('index') }}" method = "GET">
+    <input type="text" name="home" placeholder="HOME">
+    <button type="submit">HOME</button>
+  </form>
+
+{% endblock %}
